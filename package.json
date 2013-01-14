@@ -1,0 +1,15 @@
+{
+  "name": "Blog",
+  "dependencies": {
+    "express": "3.0.x",
+    "ejs": ">= 0.8.x",
+    "moment": "1.7.2",
+    "express-partials": "0.0.6",
+    "express-pjax": "0.0.1",
+    "nano": "~3.3.6"
+  },
+  "engines": {
+    "node": "v0.8.x"
+  },
+  "version": "0.0.0-1"
+}

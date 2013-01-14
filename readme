@@ -1,0 +1,9 @@
+Wanders is a project to help me learn basic web programming using node.js, express, mongdodb and ejs templating.
+
+Next steps
+- possibly investigate socket.io and realtime monitoring to record data as person wanders
+- use flickr and instagram APIs to add photos
+- tidy up interface
+- consider a JS framework instead of relying on jQuery
+- improve internal app structure by using MVC structure to a greater extent
+- clean up JS into a separate file

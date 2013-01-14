@@ -1,0 +1,70 @@
+<!doctype html>
+<head>
+    <title>Blog - <%= title %></title>
+    <meta charset="utf-8" />
+
+    <!-- Mobile Specific Metas
+  ================================================== -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- CSS
+  ================================================== -->
+   
+    <link rel="stylesheet" href="/stylesheets/style.css">
+
+    <!--[if lt IE 9]>
+        <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Favicons
+    ================================================== -->
+    <link rel="shortcut icon" href="images/favicon.ico">
+    <script type="text/javascript" src="//use.typekit.net/gvh3bbc.js"></script>
+    <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+
+    <!--[if lt IE 7 ]><html class="ie ie6" lang="en"> <![endif]-->
+    <!--[if IE 7 ]><html class="ie ie7" lang="en"> <![endif]-->
+    <!--[if IE 8 ]><html class="ie ie8" lang="en"> <![endif]-->
+    <!--[if (gte IE 9)|!(IE)]><!--><html lang="en"> <!--<![endif]-->
+
+    <!--[if IE 9]>
+
+    <![endif]-->
+    
+    <script src="/javascripts/jquery.js"></script><script src="/javascripts/jquery.cookie.js"></script><script src="/javascripts/pages.js"></script><script src="/javascripts/jquery.pjax.js"></script><script type="text/javascript">
+    $(function(){
+         // pjax
+         $('a.pjax').pjax('#main')
+         })
+      </script>
+
+</head>
+<body>
+    <div id="maincontainer"/>
+    <div id="header"><span id="headerlogo"><a href="/">Blog</a></span></div> 
+    <div id="body">
+
+        <div class="container">
+            <div class="row">
+                <div class="titletext"><h1><a href="/">Blog title</a></h1>
+                    <div>
+                    <div id="blogsubtitle">Subtitle</div>
+                    <div style="display:none"><label><input type="checkbox" name="pjax" checked/>pjax</label></div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="blogcol"><div id="main">
+                <%- body -%>
+                </div>
+                </div>
+                <br></br>
+            </div>
+            <div class="clearfooter"></div>
+        </div>
+        <div id="footer"> 
+        
+        </div>
+    </div>
+</body>
+</html>

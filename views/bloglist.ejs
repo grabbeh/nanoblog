@@ -1,0 +1,7 @@
+ <h2><%= title %></h2>
+ <ul class="list">
+ <% blogs.forEach(function(blog){ %>
+    <li><a class="pjax" href="/<%= blog.value._id %>"><%= blog.value.title %></a></li>
+  <% }) %>
+</ul>
+   

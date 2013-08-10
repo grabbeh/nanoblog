@@ -1,7 +1,7 @@
 
 //var nano = require("nano")('inserts details of couchdb provider (maybe http://[   ].iriscouch.com) 
 //or run CouchDB instance locally (normally at 'http://127.0.0.1:5984')
-var nano = require("nano")('http://127.0.0.1:5984')
+var nano = require("nano")('https://grabeh:everton@grabeh.cloudant.com')
 , moment = require("moment");
 
 // test to walkthrough various nano operations as part http://www.github/dbase/nano. You will also have to use the create command 
@@ -40,6 +40,7 @@ exports.showAll = function(req, res){
       var blogdb = nano.use('blogs');
 
       blogdb.view('basicmap', 'basicmap', function(err, blogs){ 
+        console.log(blogs);
         if (err) { console.log(err)}
           res.renderPjax("bloglist", {title: "Blogs", blogs: blogs.rows})
   })     

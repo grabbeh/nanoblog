@@ -1,7 +1,7 @@
 
 //var nano = require("nano")('inserts details of couchdb provider (maybe http://[   ].iriscouch.com) 
 //or run CouchDB instance locally (normally at 'http://127.0.0.1:5984')
-var nano = require("nano")('https://grabeh:everton@grabeh.cloudant.com')
+var nano = require("nano")('https://username:password@grabeh.cloudant.com')
 , moment = require("moment");
 
 // test to walkthrough various nano operations as part http://www.github/dbase/nano. You will also have to use the create command 

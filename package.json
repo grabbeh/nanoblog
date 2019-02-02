@@ -1,7 +1,7 @@
 {
   "name": "Blog",
   "dependencies": {
-    "express": "3.0.x",
+    "express": ">=3.11.0",
     "ejs": ">= 0.8.x",
     "moment": "2.19.3",
     "express-partials": "0.0.6",
